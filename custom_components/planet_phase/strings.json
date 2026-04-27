@@ -1,0 +1,260 @@
+{
+    "title": "Planet Phase",
+    "config": {
+        "abort": {
+            "reconfigure_successful": "The configuration was successfully updated."
+        },
+        "step": {
+            "user": {
+                "title": "Planet Phase Setup",
+                "data": {
+                    "active_planets": "active planets"
+                }
+            },
+            "reconfigure": {
+                "title": "Adjust configuration",
+                "description": "Change which planets should be displayed here.",
+                "data": {
+                    "active_planets": "active planets"
+                }
+            },
+            "configure_sensors": {
+                "title": "Adjust configuration",
+                "description": "Change the settings for your planetary sensors here.",
+                "data": {
+                    "sun_sensors": "Sun Sensors",
+                    "sun_update_interval": "Sun Update Interval",
+                    "moon_sensors": "Moon Sensors",
+                    "moon_update_interval": "Moon Update Interval",
+                    "mars_sensors": "Mars Sensors",
+                    "mars_update_interval": "Mars Update Interval",
+                    "venus_sensors": "Venus Sensors",
+                    "venus_update_interval": "Venus Update Interval",
+                    "jupiter_sensors": "Jupiter Sensors",
+                    "jupiter_update_interval": "Jupiter Update Interval",
+                    "saturn_sensors": "Saturn Sensors",
+                    "saturn_update_interval": "Saturn Update Interval",
+                    "uranus_sensors": "Uranus Sensors",
+                    "uranus_update_interval": "Uranus Update Interval",
+                    "mercury_sensors": "Mercury Sensors",
+                    "mercury_update_interval": "Mercury Update Interval",
+                    "neptune_sensors": "Neptune Sensors",
+                    "neptune_update_interval": "Neptune Update Interval",
+                    "pluto_sensors": "Pluto Sensors",
+                    "pluto_update_interval": "Pluto Update Interval"
+                }
+            }
+        }
+    },
+    "selector": {
+        "planet_sensors": {
+            "options": {
+                "main": "Main Sensor",
+                "state": "State Sensors"
+            }
+        },
+        "planet_update_interval": {
+            "unit_of_measurement": {
+                "seconds": "seconds"
+            }
+        },
+        "active_planets": {
+            "options": {
+                "sun": "Sun",
+                "moon": "Moon",
+                "mars": "Mars",
+                "venus": "Venus",
+                "jupiter": "Jupiter",
+                "saturn": "Saturn",
+                "uranus": "Uranus",
+                "mercury": "Mercury",
+                "neptune": "Neptune",
+                "pluto": "Pluto"
+            }
+        }
+    },
+    "device": {
+        "planet_phase": {
+            "name": "Planet Phase"
+        },
+        "planet_phase_sun": {
+            "name": "Planet Phase Sun"
+        },
+        "planet_phase_moon": {
+            "name": "Planet Phase Moon"
+        },
+        "planet_phase_mars": {
+            "name": "Planet Phase Mars"
+        },
+        "planet_phase_venus": {
+            "name": "Planet Phase Venus"
+        },
+        "planet_phase_jupiter": {
+            "name": "Planet Phase Jupiter"
+        },
+        "planet_phase_saturn": {
+            "name": "Planet Phase Saturn"
+        },
+        "planet_phase_uranus": {
+            "name": "Planet Phase Uranus"
+        },
+        "planet_phase_mercury": {
+            "name": "Planet Phase Mercury"
+        },
+        "planet_phase_neptune": {
+            "name": "Planet Phase Neptune"
+        },
+        "planet_phase_pluto": {
+            "name": "Planet Phase Pluto"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "sun_sun_phase": {
+                "name": "Sun Phase",
+                "state": {
+                    "day": "day",
+                    "night": "night",
+                    "morning_small_day": "morning small_day",
+                    "evening_small_day": "evening small_day",
+                    "morning_twilight": "morning twilight",
+                    "evening_twilight": "evening twilight",
+                    "morning_nautical_twilight": "morning nautical twilight",
+                    "evening_nautical_twilight": "evening nautical twilight",
+                    "morning_astronomical_twilight": "morning astronomical twilight",
+                    "evening_astronomical_twilight": "evening astronomical twilight"
+                }
+            },
+            "sun_today_rising": {
+                "name": "Today Sunrise"
+            },
+            "sun_today_setting": {
+                "name": "Today Sunset"
+            },
+            "sun_next_rising": {
+                "name": "Next Sunrise"
+            },
+            "sun_next_setting": {
+                "name": "Next Sunset"
+            },
+            "sun_previous_rising": {
+                "name": "Previous Sunrise"
+            },
+            "sun_previous_setting": {
+                "name": "Previous Sunset"
+            },
+            "sun_next_transit": {
+                "name": "Next Sun Transit"
+            },
+            "sun_today_above_horizon_time": {
+                "name": "Today Daylength"
+            },
+            "sun_altitude": {
+                "name": "Sun Altitude"
+            },
+            "sun_azimuth": {
+                "name": "Sun Azimuth"
+            },
+            "sun_next_vernal_equinox": {
+                "name": "Next Vernal Equinox"
+            },
+            "sun_next_summer_solstice": {
+                "name": "Next Summer Solstice"
+            },
+            "sun_next_autumnal_equinox": {
+                "name": "Next Autumnal Equinox"
+            },
+            "sun_next_winter_solstice": {
+                "name": "Next Winter Solstice"
+            },
+            "moon_today_rising": {
+                "name": "Today Moonrise"
+            },
+            "moon_today_setting": {
+                "name": "Today Moonset"
+            },
+            "moon_next_rising": {
+                "name": "Next Moonrise"
+            },
+            "moon_next_setting": {
+                "name": "Next Moonset"
+            },
+            "moon_previous_rising": {
+                "name": "Previous Moonrise"
+            },
+            "moon_previous_setting": {
+                "name": "Previous Moonset"
+            },
+            "moon_next_transit": {
+                "name": "Next Moontransit"
+            },
+            "moon_today_above_horizon_time": {
+                "name": "Today Moon Length"
+            },
+            "moon_altitude": {
+                "name": "Moon altitude"
+            },
+            "moon_azimuth": {
+                "name": "Moon azimuth"
+            },
+            "moon_next_new_moon": {
+                "name": "Next Newmoon"
+            },
+            "moon_next_full_moon": {
+                "name": "Next Fullmoon"
+            },
+            "moon_moon_phase": {
+                "name": "Moon Phase",
+                "state": {
+                    "new_moon": "Newmoon",
+                    "waxing_crescent": "waxing crescent",
+                    "first_quarter": "first quarter (waxing)",
+                    "waxing_gibbous": "waxing gibbous",
+                    "full_moon": "Fullmoon",
+                    "waning_gibbous": "waning gibbous",
+                    "last_quarter": "last quarter (waning)",
+                    "waning_crescent": "waning crescent"
+                }
+            },
+            "main_state": {
+                "name": "State",
+                "state": {
+                    "above_horizon [ascending]": "Over the horizon [ascending]",
+                    "above_horizon [descending]": "Over the horizon [descending]",
+                    "below_horizon [ascending]": "Under the horizon [ascending]",
+                    "below_horizon [descending]": "Under the horizon [descending]"
+                }
+            },
+            "today_rising": {
+                "name": "Today planetary rise"
+            },
+            "today_setting": {
+                "name": "Today planetary set"
+            },
+            "next_rising": {
+                "name": "Next Pplanetary rise"
+            },
+            "next_setting": {
+                "name": "Next planetary set"
+            },
+            "previous_rising": {
+                "name": "Previous planetary rise"
+            },
+            "previous_setting": {
+                "name": "Previous planetary set"
+            },
+            "next_transit": {
+                "name": "Next planetary transit"
+            },
+            "today_above_horizon_time": {
+                "name": "Today planetary length"
+            },
+            "altitude": {
+                "name": "planetary altitude"
+            },
+            "azimuth": {
+                "name": "planetary azimuth"
+            }
+        }
+    }
+}

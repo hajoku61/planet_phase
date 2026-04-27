@@ -1,0 +1,72 @@
+[project]
+name = "planet_phase"
+version = "0.1.0"
+description = "Ein Python-Projekt mit Ruff-Konfiguration"
+requires-python = ">=3.14"
+
+[build-system]
+requires = ["setuptools>=40.9.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+#[tool.pytest.ini.options]
+#testpaths = ["tests"]
+#asyncio_mode = "auto"
+#asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+# Die maximale Zeilenlänge (Standard ist oft 88, 100 ist ein guter Kompromiss)
+line-length = 150
+# Zielversion für Python 3.14
+target-version = "py314"
+
+[tool.ruff.lint]
+# "select" legt fest, welche Regeln geprüft werden:
+# E/W = pycodestyle, F = Pyflakes, I = isort (Imports), PL = Pylint-Regeln
+#select = [
+#    "E",    # Style Errors
+#    "W",    # Style Warnings
+#    "F",    # Pyflakes (Logikfehler)
+#    "I",    # isort (Imports automatisch sortieren)
+#    "PL",   # Alle Pylint-Regeln (ersetzt den alten Pylint-Linter)
+#    "UP",   # Pyupgrade (schlägt modernere Python-Syntax vor)
+#    "FIX",  # Prüft auf FIXME (ersetzt check-fixme-in-docstring)
+#]
+select = [
+    "ALL",
+]
+
+# Hier kannst du Regeln deaktivieren, die dich nerven:
+#ignore = [
+#    "D100",   # Fehlende Modul-Docstrings (was wir zuvor besprochen haben)
+#    "PLR0913" # Zu viele Argumente in einer Funktion (oft zu streng)
+#]
+ignore = [
+    "ANN401", # Dynamically typed expressions (typing.Any) are disallowed
+    "D203", # no-blank-line-before-class (incompatible with formatter)
+    "D212", # multi-line-summary-first-line (incompatible with formatter)
+    "COM812", # incompatible with formatter
+    "ISC001", # incompatible with formatter
+    "ERA001", # commented-out-code
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"] # Ignoriert Assert-Warnungen in allen Test-Dateien
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
+[tool.ruff.lint.pylint]
+# Hier kannst du Pylint-spezifische Grenzwerte anpassen
+max-args = 5
+max-statements = 50
+
+[tool.ruff.format]
+# Einstellungen für den Formatter (ersetzt Black)
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint.isort]
+# Sorgt dafür, dass Imports übersichtlich gruppiert werden
+force-single-line = true
+combine-as-imports = true

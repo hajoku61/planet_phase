@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+##pytest --fixtures
+pytest --snapshot-update
+pytest --cov --cov-report=xml:coverage.xml

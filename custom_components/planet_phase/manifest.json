@@ -1,0 +1,18 @@
+{
+  "domain": "planet_phase",
+  "name": "Planet Phase",
+  "codeowners": [
+    "@hajoku61"
+  ],
+  "documentation": "https://github.com/hajoku61/planet_phase",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "quality_scale": "internal",
+  "config_flow": true,
+  "single_config_entry": true,
+  "issue_tracker": "https://github.com/hajoku61/planet_phase/issues",
+  "version": "0.1.0",
+  "requirements": [
+    "ephem>=4.2.1"
+  ]
+}

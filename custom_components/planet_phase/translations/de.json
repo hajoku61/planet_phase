@@ -1,0 +1,260 @@
+{
+    "title": "Planet Phase",
+    "config": {
+        "abort": {
+            "reconfigure_successful": "Die Konfiguration wurde erfolgreich aktualisiert."
+        },
+        "step": {
+            "user": {
+                "title": "Planet Phase Setup",
+                "data": {
+                    "active_planets": "Aktive Planeten"
+                }
+            },
+            "reconfigure": {
+                "title": "Konfiguration anpassen",
+                "description": "Ändere hier, welche Planeten angezeigt werden sollen.",
+                "data": {
+                    "active_planets": "Aktive Planeten"
+                }
+            },
+            "configure_sensors": {
+                "title": "Konfiguration anpassen",
+                "description": "Ändere hier die Einstellungen für deine Planeten-Sensoren.",
+                "data": {
+                    "sun_sensors": "Sonnen Sensoren",
+                    "sun_update_interval": "Sonnen Update Intervall",
+                    "moon_sensors": "Mond Sensoren",
+                    "moon_update_interval": "Mond Update Intervall",
+                    "mars_sensors": "Mars Sensoren",
+                    "mars_update_interval": "Mars Update Intervall",
+                    "venus_sensors": "Venus Sensoren",
+                    "venus_update_interval": "Venus Update Intervall",
+                    "jupiter_sensors": "Jupiter Sensoren",
+                    "jupiter_update_interval": "Jupiter Update Intervall",
+                    "saturn_sensors": "Saturn Sensoren",
+                    "saturn_update_interval": "Saturn Update Intervall",
+                    "uranus_sensors": "Uranus Sensoren",
+                    "uranus_update_interval": "Uranus Update Intervall",
+                    "mercury_sensors": "Merkur Sensoren",
+                    "mercury_update_interval": "Merkur Update Intervall",
+                    "neptune_sensors": "Neptun Sensoren",
+                    "neptune_update_interval": "Neptun Update Intervall",
+                    "pluto_sensors": "Pluto Sensoren",
+                    "pluto_update_interval": "Pluto Update Intervall"
+                }
+            }
+        }
+    },
+    "selector": {
+        "planet_sensors": {
+            "options": {
+                "main": "Hauptsensor",
+                "state": "Statussensoren"
+            }
+        },
+        "planet_update_interval": {
+            "unit_of_measurement": {
+                "seconds": "Sekunden"
+            }
+        },
+        "active_planets": {
+            "options": {
+                "sun": "Sonne",
+                "moon": "Mond",
+                "mars": "Mars",
+                "venus": "Venus",
+                "jupiter": "Jupiter",
+                "saturn": "Saturn",
+                "uranus": "Uranus",
+                "mercury": "Merkur",
+                "neptune": "Neptun",
+                "pluto": "Pluto"
+            }
+        }
+    },
+    "device": {
+        "planet_phase": {
+            "name": "Planet Phase"
+        },
+        "planet_phase_sun": {
+            "name": "Planet Phase Sonne"
+        },
+        "planet_phase_moon": {
+            "name": "Planet Phase Mond"
+        },
+        "planet_phase_mars": {
+            "name": "Planet Phase Mars"
+        },
+        "planet_phase_venus": {
+            "name": "Planet Phase Venus"
+        },
+        "planet_phase_jupiter": {
+            "name": "Planet Phase Jupiter"
+        },
+        "planet_phase_saturn": {
+            "name": "Planet Phase Saturn"
+        },
+        "planet_phase_uranus": {
+            "name": "Planet Phase Uranus"
+        },
+        "planet_phase_mercury": {
+            "name": "Planet Phase Merkur"
+        },
+        "planet_phase_neptune": {
+            "name": "Planet Phase Neptun"
+        },
+        "planet_phase_pluto": {
+            "name": "Planet Phase Pluto"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "sun_sun_phase": {
+                "name": "Sonnen Phase",
+                "state": {
+                    "day": "Tag",
+                    "night": "Nacht",
+                    "morning_small_day": "Morgengrauen",
+                    "evening_small_day": "Abendgrauen",
+                    "morning_twilight": "Morgendämmerung",
+                    "evening_twilight": "Abenddämmerung",
+                    "morning_nautical_twilight": "Nautische Morgendämmerung",
+                    "evening_nautical_twilight": "Nautische Abenddämmerung",
+                    "morning_astronomical_twilight": "Astronomische Morgendämmerung",
+                    "evening_astronomical_twilight": "Astronomische Abenddämmerung"
+                }
+            },
+            "sun_today_rising": {
+                "name": "Heutiger Sonnenaufgang"
+            },
+            "sun_today_setting": {
+                "name": "Heutiger Sonnenuntergang"
+            },
+            "sun_next_rising": {
+                "name": "Nächster Sonnenaufgang"
+            },
+            "sun_next_setting": {
+                "name": "Nächster Sonnenuntergang"
+            },
+            "sun_previous_rising": {
+                "name": "Letzter Sonnenaufgang"
+            },
+            "sun_previous_setting": {
+                "name": "Letzter Sonnenuntergang"
+            },
+            "sun_next_transit": {
+                "name": "Nächster Sonnendurchgang"
+            },
+            "sun_today_above_horizon_time": {
+                "name": "Heutige Tageslänge"
+            },
+            "sun_altitude": {
+                "name": "Sonnenhöhe"
+            },
+            "sun_azimuth": {
+                "name": "Sonnenrichtung"
+            },
+            "sun_next_vernal_equinox": {
+                "name": "Nächster Frühlingsanfang"
+            },
+            "sun_next_summer_solstice": {
+                "name": "Nächste Sommersonnenwende"
+            },
+            "sun_next_autumnal_equinox": {
+                "name": "Nächster Herbstanfang"
+            },
+            "sun_next_winter_solstice": {
+                "name": "Nächste Wintersonnenwende"
+            },
+            "moon_today_rising": {
+                "name": "Heutiger Mondaufgang"
+            },
+            "moon_today_setting": {
+                "name": "Heutiger Monduntergang"
+            },
+            "moon_next_rising": {
+                "name": "Nächster Mondaufgang"
+            },
+            "moon_next_setting": {
+                "name": "Nächster Monduntergang"
+            },
+            "moon_previous_rising": {
+                "name": "Letzter Mondaufgang"
+            },
+            "moon_previous_setting": {
+                "name": "Letzter Monduntergang"
+            },
+            "moon_next_transit": {
+                "name": "Nächster Monddurchgang"
+            },
+            "moon_today_above_horizon_time": {
+                "name": "Heutige Mondlänge"
+            },
+            "moon_altitude": {
+                "name": "Mondhöhe"
+            },
+            "moon_azimuth": {
+                "name": "Mondrichtung"
+            },
+            "moon_next_new_moon": {
+                "name": "Nächster Neumond"
+            },
+            "moon_next_full_moon": {
+                "name": "Nächster Vollmond"
+            },
+            "moon_moon_phase": {
+                "name": "Mond Phase",
+                "state": {
+                    "new_moon": "Neumond",
+                    "waxing_crescent": "Zunehmender Sichelmond",
+                    "first_quarter": "Zunehmender Halbmond",
+                    "waxing_gibbous": "Zunehmender Dreiviertelmond",
+                    "full_moon": "Vollmond",
+                    "waning_gibbous": "Abnehmender Dreiviertelmond",
+                    "last_quarter": "Abnehmender Halbmond",
+                    "waning_crescent": "Abnehmender Sichelmond"
+                }
+            },
+            "main_state": {
+                "name": "Zustand",
+                "state": {
+                    "above_horizon [ascending]": "Über dem Horizont [Zunehmend]",
+                    "above_horizon [descending]": "Über dem Horizont [Abnehmend]",
+                    "below_horizon [ascending]": "Unter dem Horizont [Zunehmend]",
+                    "below_horizon [descending]": "Unter dem Horizont [Abnehmend]"
+                }
+            },
+            "today_rising": {
+                "name": "Heutiger Planetenaufgang"
+            },
+            "today_setting": {
+                "name": "Heutiger Planetenuntergang"
+            },
+            "next_rising": {
+                "name": "Nächster Planetenaufgang"
+            },
+            "next_setting": {
+                "name": "Nächster Planetenuntergang"
+            },
+            "previous_rising": {
+                "name": "Letzter Planetenaufgang"
+            },
+            "previous_setting": {
+                "name": "Letzter Planetenuntergang"
+            },
+            "next_transit": {
+                "name": "Nächster Planetendurchgang"
+            },
+            "today_above_horizon_time": {
+                "name": "Heutige Planetenlänge"
+            },
+            "altitude": {
+                "name": "Planetenhöhe"
+            },
+            "azimuth": {
+                "name": "Planetenrichtung"
+            }
+        }
+    }
+}

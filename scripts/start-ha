@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+# Create config dir if not present
+if [[ ! -d "${PWD}/config" ]]; then
+    mkdir -p "${PWD}/config"
+    hass --config "${PWD}/config" --script ensure_config
+fi
+
+# Stop any running instance of Home Assistant
+if [[ -f /tmp/ha_server.pid ]]; then
+    HA_PID=$(cat /tmp/ha_server.pid)
+    if ps -p $HA_PID > /dev/null 2>&1; then
+        echo "Stopping existing Home Assistant instance (PID: $HA_PID)..."
+        kill $HA_PID
+        # Wait for the process to terminate
+        while ps -p $HA_PID > /dev/null 2>&1; do
+            sleep 1
+        done
+        echo "Home Assistant stopped."
+    fi
+    rm -f /tmp/ha_server.pid
+fi
+
+# Set the path to custom_components
+## This let's us have the structure we want <root>/custom_components/sun_phase
+## while at the same time have Home Assistant configuration inside <root>/config
+## without resulting to symlinks.
+export PYTHONPATH="${PYTHONPATH}:${PWD}/custom_components"
+
+# Start Home Assistant
+hass --config "${PWD}/config" --debug &
+
+HA_PID=$!
+    echo $HA_PID > /tmp/ha_server.pid

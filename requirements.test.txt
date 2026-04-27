@@ -1,0 +1,5 @@
+colorlog
+ruff
+ephem
+pytest-homeassistant-custom-component
+syrupy

@@ -1,0 +1,83 @@
+# serializer version: 1
+# name: test_full_config_flow[final_config_data]
+  dict({
+    'mars': dict({
+      <PlanetConfigKey.MAIN_SENSOR: 'MainSensor'>: True,
+      <PlanetConfigKey.STATE_SENSORS: 'StateSensors'>: True,
+      <PlanetConfigKey.UPDATE_INTERVAL: 'UpdateInterval'>: 60.0,
+      <PlanetConfigKey.ACTIVE: 'active'>: True,
+    }),
+    'moon': dict({
+      <PlanetConfigKey.MAIN_SENSOR: 'MainSensor'>: True,
+      <PlanetConfigKey.STATE_SENSORS: 'StateSensors'>: True,
+      <PlanetConfigKey.UPDATE_INTERVAL: 'UpdateInterval'>: 60.0,
+      <PlanetConfigKey.ACTIVE: 'active'>: True,
+    }),
+    'sun': dict({
+      <PlanetConfigKey.MAIN_SENSOR: 'MainSensor'>: True,
+      <PlanetConfigKey.STATE_SENSORS: 'StateSensors'>: True,
+      <PlanetConfigKey.UPDATE_INTERVAL: 'UpdateInterval'>: 60.0,
+      <PlanetConfigKey.ACTIVE: 'active'>: True,
+    }),
+    'venus': dict({
+      <PlanetConfigKey.MAIN_SENSOR: 'MainSensor'>: True,
+      <PlanetConfigKey.STATE_SENSORS: 'StateSensors'>: False,
+      <PlanetConfigKey.UPDATE_INTERVAL: 'UpdateInterval'>: 300.0,
+      <PlanetConfigKey.ACTIVE: 'active'>: True,
+    }),
+  })
+# ---
+# name: test_full_config_flow[sensor_config_form]
+  FlowResultSnapshot({
+    'data_schema': dict({
+      'mars_sensors': 'SelectSelector',
+      'mars_update_interval': 'NumberSelector',
+      'moon_sensors': 'SelectSelector',
+      'moon_update_interval': 'NumberSelector',
+      'sun_sensors': 'SelectSelector',
+      'sun_update_interval': 'NumberSelector',
+      'venus_sensors': 'SelectSelector',
+      'venus_update_interval': 'NumberSelector',
+    }),
+    'description_placeholders': dict({
+      'active_planets': 'Sun, Moon, Mars, Venus',
+    }),
+    'errors': None,
+    'flow_id': <ANY>,
+    'handler': 'planet_phase',
+    'last_step': None,
+    'preview': None,
+    'step_id': 'configure_sensors',
+    'type': <FlowResultType.FORM: 'form'>,
+  })
+# ---
+# name: test_full_config_flow[user_form]
+  FlowResultSnapshot({
+    'data_schema': dict({
+      'active_planets': 'SelectSelector',
+    }),
+    'description_placeholders': None,
+    'errors': None,
+    'flow_id': <ANY>,
+    'handler': 'planet_phase',
+    'last_step': None,
+    'preview': None,
+    'step_id': 'user',
+    'type': <FlowResultType.FORM: 'form'>,
+  })
+# ---
+# name: test_reconfigure_flow[reconfigure_form]
+  FlowResultSnapshot({
+    'data_schema': dict({
+      'active_planets': 'SelectSelector',
+    }),
+    'description_placeholders': None,
+    'errors': None,
+    'flow_id': <ANY>,
+    'handler': 'planet_phase',
+    'last_step': None,
+    'preview': None,
+    'step_id': 'reconfigure',
+    'type': <FlowResultType.FORM: 'form'>,
+  })
+# ---
