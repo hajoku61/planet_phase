@@ -219,10 +219,10 @@
             "main_state": {
                 "name": "Zustand",
                 "state": {
-                    "above_horizon [ascending]": "Über dem Horizont [Zunehmend]",
-                    "above_horizon [descending]": "Über dem Horizont [Abnehmend]",
-                    "below_horizon [ascending]": "Unter dem Horizont [Zunehmend]",
-                    "below_horizon [descending]": "Unter dem Horizont [Abnehmend]"
+                    "above_horizon_[ascending]": "Über dem Horizont [Zunehmend]",
+                    "above_horizon_[descending]": "Über dem Horizont [Abnehmend]",
+                    "below_horizon_[ascending]": "Unter dem Horizont [Zunehmend]",
+                    "below_horizon_[descending]": "Unter dem Horizont [Abnehmend]"
                 }
             },
             "today_rising": {

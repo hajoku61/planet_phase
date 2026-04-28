@@ -219,10 +219,10 @@
             "main_state": {
                 "name": "State",
                 "state": {
-                    "above_horizon [ascending]": "Over the horizon [ascending]",
-                    "above_horizon [descending]": "Over the horizon [descending]",
-                    "below_horizon [ascending]": "Under the horizon [ascending]",
-                    "below_horizon [descending]": "Under the horizon [descending]"
+                    "above_horizon_[ascending]": "Over the horizon [ascending]",
+                    "above_horizon_[descending]": "Over the horizon [descending]",
+                    "below_horizon_[ascending]": "Under the horizon [ascending]",
+                    "below_horizon_[descending]": "Under the horizon [descending]"
                 }
             },
             "today_rising": {

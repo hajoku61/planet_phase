@@ -231,7 +231,7 @@ class PlanetPhaseMainSensor(PlanetPhaseEntity, SensorEntity):
         """Return the native value of the sensor."""
         phase_data, phase_icon = self.coordinator.data
         self.icon = phase_icon.get(self.entity_description.key)  # Icon basierend auf der aktuellen Phase setzen
-        return f"{phase_data.get(self.entity_description.key)} [{phase_data.get(PlanetStateKey.MAIN_MOVE)}]"
+        return f"{phase_data.get(self.entity_description.key)}_[{phase_data.get(PlanetStateKey.MAIN_MOVE)}]"
 
     @property
     def extra_state_attributes(self) -> dict | None:
