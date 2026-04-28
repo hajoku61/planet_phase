@@ -38,7 +38,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-new_moon][sensor.planet_phase_moon_moon_phase]
@@ -106,7 +106,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [ascending]',
+    'state': 'above_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-waxing_crescent][sensor.planet_phase_moon_moon_phase]
@@ -174,7 +174,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [ascending]',
+    'state': 'above_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time2-first_quarter][sensor.planet_phase_moon_moon_phase]
@@ -242,7 +242,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time3-waxing_gibbous][sensor.planet_phase_moon_moon_phase]
@@ -310,7 +310,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time4-full_moon][sensor.planet_phase_moon_moon_phase]
@@ -378,7 +378,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time5-waning_gibbous][sensor.planet_phase_moon_moon_phase]
@@ -446,7 +446,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time6-last_quarter][sensor.planet_phase_moon_moon_phase]
@@ -514,7 +514,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time7-waning_crescent][sensor.planet_phase_moon_moon_phase]

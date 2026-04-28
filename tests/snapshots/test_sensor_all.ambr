@@ -71,7 +71,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [ascending]',
+    'state': 'above_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-last_second_2025][sensor.planet_phase_jupiter_next_rising]
@@ -257,7 +257,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-last_second_2025][sensor.planet_phase_mars_next_rising]
@@ -443,7 +443,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-last_second_2025][sensor.planet_phase_mercury_next_rising]
@@ -633,7 +633,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-last_second_2025][sensor.planet_phase_moon_moon_phase]
@@ -877,7 +877,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-last_second_2025][sensor.planet_phase_neptune_next_rising]
@@ -1063,7 +1063,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-last_second_2025][sensor.planet_phase_pluto_next_rising]
@@ -1249,7 +1249,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-last_second_2025][sensor.planet_phase_saturn_next_rising]
@@ -1440,7 +1440,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-last_second_2025][sensor.planet_phase_sun_next_autumnal_equinox]
@@ -1718,7 +1718,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-last_second_2025][sensor.planet_phase_uranus_next_rising]
@@ -1904,7 +1904,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time0-last_second_2025][sensor.planet_phase_venus_next_rising]
@@ -2090,7 +2090,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [ascending]',
+    'state': 'above_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026][sensor.planet_phase_jupiter_next_rising]
@@ -2276,7 +2276,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026][sensor.planet_phase_mars_next_rising]
@@ -2462,7 +2462,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026][sensor.planet_phase_mercury_next_rising]
@@ -2652,7 +2652,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026][sensor.planet_phase_moon_moon_phase]
@@ -2896,7 +2896,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026][sensor.planet_phase_neptune_next_rising]
@@ -3082,7 +3082,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026][sensor.planet_phase_pluto_next_rising]
@@ -3268,7 +3268,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026][sensor.planet_phase_saturn_next_rising]
@@ -3459,7 +3459,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026][sensor.planet_phase_sun_next_autumnal_equinox]
@@ -3737,7 +3737,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026][sensor.planet_phase_uranus_next_rising]
@@ -3923,7 +3923,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026][sensor.planet_phase_venus_next_rising]
@@ -4109,7 +4109,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [ascending]',
+    'state': 'above_horizon_ascending',
   })
 # ---
 # name: test_sensor_without_config[sensor.planet_phase_jupiter_next_rising]
@@ -4295,7 +4295,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_without_config[sensor.planet_phase_mars_next_rising]
@@ -4481,7 +4481,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_without_config[sensor.planet_phase_mercury_next_rising]
@@ -4671,7 +4671,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_without_config[sensor.planet_phase_moon_moon_phase]
@@ -4915,7 +4915,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_without_config[sensor.planet_phase_neptune_next_rising]
@@ -5101,7 +5101,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_without_config[sensor.planet_phase_pluto_next_rising]
@@ -5287,7 +5287,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [ascending]',
+    'state': 'above_horizon_ascending',
   })
 # ---
 # name: test_sensor_without_config[sensor.planet_phase_saturn_next_rising]
@@ -5478,7 +5478,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_without_config[sensor.planet_phase_sun_next_autumnal_equinox]
@@ -5756,7 +5756,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_without_config[sensor.planet_phase_uranus_next_rising]
@@ -5942,7 +5942,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_without_config[sensor.planet_phase_venus_next_rising]

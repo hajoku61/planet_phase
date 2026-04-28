@@ -67,7 +67,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time1-first_second_2026-night][sensor.planet_phase_sun_sun_phase]
@@ -138,7 +138,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time10-dst_spring_jump-night][sensor.planet_phase_sun_sun_phase]
@@ -209,7 +209,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time11-just_before_earliest_sunrise-morning_twilight][sensor.planet_phase_sun_sun_phase]
@@ -280,7 +280,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time12-just_after_earliest_sunrise-morning_small_day][sensor.planet_phase_sun_sun_phase]
@@ -351,7 +351,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [ascending]',
+    'state': 'above_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time13-just_before_earliest_sunset-evening_small_day][sensor.planet_phase_sun_sun_phase]
@@ -422,7 +422,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time14-just_after_earliest_sunset-evening_twilight][sensor.planet_phase_sun_sun_phase]
@@ -493,7 +493,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time15-year_overflow_last_sec-night][sensor.planet_phase_sun_sun_phase]
@@ -564,7 +564,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time2-first_hour_2026_to_check_localtime-night][sensor.planet_phase_sun_sun_phase]
@@ -635,7 +635,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time3-midday_new_year-day][sensor.planet_phase_sun_sun_phase]
@@ -706,7 +706,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [ascending]',
+    'state': 'above_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time4-dst_spring-night][sensor.planet_phase_sun_sun_phase]
@@ -777,7 +777,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time5-dst_autumn-night][sensor.planet_phase_sun_sun_phase]
@@ -848,7 +848,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time6-just_before_sunset_summer-evening_small_day][sensor.planet_phase_sun_sun_phase]
@@ -919,7 +919,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'above_horizon [descending]',
+    'state': 'above_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time7-just_after_sunset_summer-evening_twilight][sensor.planet_phase_sun_sun_phase]
@@ -990,7 +990,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [descending]',
+    'state': 'below_horizon_descending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time8-before_civil_dawn_winter-morning_nautical_twilight][sensor.planet_phase_sun_sun_phase]
@@ -1061,7 +1061,7 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
 # name: test_sensor_time_transitions[test_time9-after_civil_dawn_winter-morning_twilight][sensor.planet_phase_sun_sun_phase]
@@ -1132,6 +1132,6 @@
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
-    'state': 'below_horizon [ascending]',
+    'state': 'below_horizon_ascending',
   })
 # ---
