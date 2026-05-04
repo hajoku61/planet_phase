@@ -113,8 +113,8 @@ ENTITY_DESCRIPTIONS_PLANET_PHASE_SUN_SENSORS = (
         device_class=SensorDeviceClass.TIMESTAMP,
     ),
     SensorEntityDescription(
-        key=PlanetStateKey.SUN_PHASE,
-        name=PlanetStateKey.SUN_PHASE,
+        key=PlanetStateKey.PHASE,
+        name=PlanetStateKey.PHASE,
         device_class=SensorDeviceClass.ENUM,
         options=[phase["name"] for phase in sun_phases.values()],
     ),
@@ -132,8 +132,8 @@ ENTITY_DESCRIPTIONS_PLANET_PHASE_MOON_SENSORS = (
         device_class=SensorDeviceClass.TIMESTAMP,
     ),
     SensorEntityDescription(
-        key=PlanetStateKey.MOON_PHASE,
-        name=PlanetStateKey.MOON_PHASE,
+        key=PlanetStateKey.PHASE,
+        name=PlanetStateKey.PHASE,
         device_class=SensorDeviceClass.ENUM,
         options=[phase["name"] for phase in moon_phases.values()],
     ),

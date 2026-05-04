@@ -1,10 +1,10 @@
 # serializer version: 1
-# name: test_sensor_time_transitions[test_time0-last_second_2025-night][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time0-last_second_2025-night][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-down',
       'options': list([
         'night',
@@ -20,7 +20,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -38,6 +38,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 173.58677237792628,
       'icon': 'mdi:weather-moonset-down',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'descending',
@@ -52,11 +53,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2026, 1, 1, 12, 25, 52, 832786, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2026, 12, 21, 21, 49, 59, 830144, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'night',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 12, 31, 8, 14, 39, 623154, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 12, 31, 16, 36, 19, 95896, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'night',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '8:21:39',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 12, 31, 8, 14, 39, 623140, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -70,12 +70,12 @@
     'state': 'below_horizon_descending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time1-first_second_2026-night][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time1-first_second_2026-night][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-down',
       'options': list([
         'night',
@@ -91,7 +91,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -109,6 +109,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 173.59093754966437,
       'icon': 'mdi:weather-moonset-down',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'descending',
@@ -123,11 +124,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2026, 1, 1, 12, 25, 52, 832786, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2026, 12, 21, 21, 49, 59, 830144, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'night',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 12, 31, 8, 14, 39, 623154, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 12, 31, 16, 36, 19, 95897, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'night',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '8:22:37',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2026, 1, 1, 8, 14, 39, 434170, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -141,12 +141,12 @@
     'state': 'below_horizon_descending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time10-dst_spring_jump-night][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time10-dst_spring_jump-night][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-up',
       'options': list([
         'night',
@@ -162,7 +162,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -180,6 +180,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 203.04323304195015,
       'icon': 'mdi:weather-moonset-up',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'ascending',
@@ -194,11 +195,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 3, 30, 13, 26, 41, 669368, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231129, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'night',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 3, 29, 6, 5, 50, 383462, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 3, 29, 18, 49, 5, 689609, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'night',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '12:46:49',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 3, 30, 7, 3, 45, 293462, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -212,12 +212,12 @@
     'state': 'below_horizon_ascending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time11-just_before_earliest_sunrise-morning_twilight][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time11-just_before_earliest_sunrise-morning_twilight][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-up',
       'options': list([
         'night',
@@ -233,7 +233,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -251,6 +251,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 239.24483703112418,
       'icon': 'mdi:weather-moonset-up',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'ascending',
@@ -265,11 +266,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 6, 16, 13, 23, 5, 218148, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231129, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'morning_twilight',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 6, 16, 5, 18, 34, 309756, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 6, 15, 21, 27, 18, 794312, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'morning_twilight',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '16:09:10',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 6, 16, 5, 18, 34, 309886, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -283,12 +283,12 @@
     'state': 'below_horizon_ascending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time12-just_after_earliest_sunrise-morning_small_day][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time12-just_after_earliest_sunrise-morning_small_day][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-sunset-up',
       'options': list([
         'night',
@@ -304,7 +304,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -322,6 +322,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 239.74475465125482,
       'icon': 'mdi:weather-sunset-up',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'ascending',
@@ -336,11 +337,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 6, 16, 13, 23, 5, 218148, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231129, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'morning_small_day',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 6, 16, 5, 18, 34, 309538, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 6, 15, 21, 27, 18, 794324, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'morning_small_day',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '16:09:10',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 6, 16, 5, 18, 34, 309886, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -354,12 +354,12 @@
     'state': 'above_horizon_ascending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time13-just_before_earliest_sunset-evening_small_day][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time13-just_before_earliest_sunset-evening_small_day][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-sunset-down',
       'options': list([
         'night',
@@ -375,7 +375,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -393,6 +393,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 62.0701918933304,
       'icon': 'mdi:weather-sunset-down',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'descending',
@@ -407,11 +408,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 12, 12, 12, 16, 6, 645754, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231129, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'evening_small_day',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 12, 11, 8, 4, 36, 178002, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 12, 10, 16, 26, 33, 125022, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'evening_small_day',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '8:21:55',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 12, 11, 8, 4, 36, 152791, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -425,12 +425,12 @@
     'state': 'above_horizon_descending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time14-just_after_earliest_sunset-evening_twilight][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time14-just_after_earliest_sunset-evening_twilight][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-down',
       'options': list([
         'night',
@@ -446,7 +446,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -464,6 +464,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 62.570038450667525,
       'icon': 'mdi:weather-moonset-down',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'descending',
@@ -478,11 +479,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 12, 12, 12, 16, 6, 645754, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231129, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'evening_twilight',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 12, 11, 8, 4, 36, 178050, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 12, 10, 16, 26, 33, 125022, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'evening_twilight',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '8:21:55',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 12, 11, 8, 4, 36, 152791, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -496,12 +496,12 @@
     'state': 'below_horizon_descending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time15-year_overflow_last_sec-night][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time15-year_overflow_last_sec-night][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-down',
       'options': list([
         'night',
@@ -517,7 +517,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -535,6 +535,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 173.58677237792628,
       'icon': 'mdi:weather-moonset-down',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'descending',
@@ -549,11 +550,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2026, 1, 1, 12, 25, 52, 832786, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2026, 12, 21, 21, 49, 59, 830144, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'night',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 12, 31, 8, 14, 39, 623154, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 12, 31, 16, 36, 19, 95896, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'night',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '8:21:39',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 12, 31, 8, 14, 39, 623140, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -567,12 +567,12 @@
     'state': 'below_horizon_descending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time2-first_hour_2026_to_check_localtime-night][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time2-first_hour_2026_to_check_localtime-night][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-up',
       'options': list([
         'night',
@@ -588,7 +588,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -606,6 +606,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 188.5855619045737,
       'icon': 'mdi:weather-moonset-up',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'ascending',
@@ -620,11 +621,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2026, 1, 1, 12, 25, 52, 832786, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2026, 12, 21, 21, 49, 59, 830144, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'night',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 12, 31, 8, 14, 39, 623156, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 12, 31, 16, 36, 19, 97532, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'night',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '8:22:37',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2026, 1, 1, 8, 14, 39, 434170, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -638,12 +638,12 @@
     'state': 'below_horizon_ascending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time3-midday_new_year-day][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time3-midday_new_year-day][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-sunset-up',
       'options': list([
         'night',
@@ -659,7 +659,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -677,6 +677,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 353.5317684331415,
       'icon': 'mdi:weather-sunset-up',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'ascending',
@@ -691,11 +692,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2026, 1, 1, 12, 25, 52, 832786, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2026, 12, 21, 21, 49, 59, 830144, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'day',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2026, 1, 1, 8, 14, 39, 434174, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 12, 31, 16, 36, 19, 114588, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'day',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '8:22:37',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2026, 1, 1, 8, 14, 39, 434170, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -709,12 +709,12 @@
     'state': 'above_horizon_ascending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time4-dst_spring-night][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time4-dst_spring-night][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-up',
       'options': list([
         'night',
@@ -730,7 +730,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -748,6 +748,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 203.04323304195015,
       'icon': 'mdi:weather-moonset-up',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'ascending',
@@ -762,11 +763,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 3, 30, 13, 26, 41, 669368, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231129, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'night',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 3, 29, 6, 5, 50, 383462, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 3, 29, 18, 49, 5, 689609, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'night',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '12:46:49',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 3, 30, 7, 3, 45, 293462, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -780,12 +780,12 @@
     'state': 'below_horizon_ascending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time5-dst_autumn-night][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time5-dst_autumn-night][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-up',
       'options': list([
         'night',
@@ -801,7 +801,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -819,6 +819,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 200.91783252300397,
       'icon': 'mdi:weather-moonset-up',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'ascending',
@@ -833,11 +834,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 10, 26, 12, 6, 16, 891304, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231130, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'night',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 10, 25, 7, 57, 42, 958533, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 10, 25, 18, 14, 20, 633944, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'night',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '10:13:18',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 10, 26, 6, 59, 16, 568848, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -851,12 +851,12 @@
     'state': 'below_horizon_ascending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time6-just_before_sunset_summer-evening_small_day][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time6-just_before_sunset_summer-evening_small_day][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-sunset-down',
       'options': list([
         'night',
@@ -872,7 +872,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -890,6 +890,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 120.18871066574229,
       'icon': 'mdi:weather-sunset-down',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'descending',
@@ -904,11 +905,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 6, 22, 13, 24, 23, 810862, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231129, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'evening_small_day',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 6, 21, 5, 19, 7, 114195, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 6, 20, 21, 29, 0, 987912, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'evening_small_day',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '16:10:06',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 6, 21, 5, 19, 7, 112352, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -922,12 +922,12 @@
     'state': 'above_horizon_descending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time7-just_after_sunset_summer-evening_twilight][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time7-just_after_sunset_summer-evening_twilight][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-down',
       'options': list([
         'night',
@@ -943,7 +943,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -961,6 +961,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 120.68862700392884,
       'icon': 'mdi:weather-moonset-down',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'descending',
@@ -975,11 +976,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 6, 22, 13, 24, 23, 810862, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231129, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'evening_twilight',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 6, 21, 5, 19, 7, 114199, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 6, 20, 21, 29, 0, 987914, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'evening_twilight',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '16:10:06',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 6, 21, 5, 19, 7, 112352, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -993,12 +993,12 @@
     'state': 'below_horizon_descending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time8-before_civil_dawn_winter-morning_nautical_twilight][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time8-before_civil_dawn_winter-morning_nautical_twilight][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-up',
       'options': list([
         'night',
@@ -1014,7 +1014,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -1032,6 +1032,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 288.1488963342952,
       'icon': 'mdi:weather-moonset-up',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'ascending',
@@ -1046,11 +1047,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 12, 21, 12, 20, 29, 825772, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231130, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'morning_nautical_twilight',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 12, 20, 8, 11, 25, 140754, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 12, 20, 16, 28, 33, 622499, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'morning_nautical_twilight',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '8:17:04',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 12, 21, 8, 11, 57, 351470, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
@@ -1064,12 +1064,12 @@
     'state': 'below_horizon_ascending',
   })
 # ---
-# name: test_sensor_time_transitions[test_time9-after_civil_dawn_winter-morning_twilight][sensor.planet_phase_sun_sun_phase]
+# name: test_sensor_time_transitions[test_time9-after_civil_dawn_winter-morning_twilight][sensor.planet_phase_sun_phase]
   StateSnapshot({
     'attributes': ReadOnlyDict({
       'attribution': 'planet_phase',
       'device_class': 'enum',
-      'friendly_name': 'planet_phase_sun sun_phase',
+      'friendly_name': 'planet_phase_sun phase',
       'icon': 'mdi:weather-moonset-up',
       'options': list([
         'night',
@@ -1085,7 +1085,7 @@
       ]),
     }),
     'context': <ANY>,
-    'entity_id': 'sensor.planet_phase_sun_sun_phase',
+    'entity_id': 'sensor.planet_phase_sun_phase',
     'last_changed': <ANY>,
     'last_reported': <ANY>,
     'last_updated': <ANY>,
@@ -1103,6 +1103,7 @@
       'friendly_name': 'planet_phase_sun main_state',
       <PlanetStateKey.HOUR_ANGLE: 'hour_angle'>: 288.6487282664636,
       'icon': 'mdi:weather-moonset-up',
+      <PlanetStateKey.Iillumination: 'illumination'>: 100.0,
       'latitude': 48.69413582658938,
       'longitude': 9.418473690748216,
       <PlanetStateKey.MAIN_MOVE: 'main_move'>: 'ascending',
@@ -1117,11 +1118,10 @@
       <PlanetStateKey.NEXT_TRANSIT: 'next_transit'>: HAFakeDatetime(2025, 12, 21, 12, 20, 29, 825772, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_VERNAL_EQUINOX: 'next_vernal_equinox'>: HAFakeDatetime(2026, 3, 20, 15, 45, 53, 449300, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.NEXT_WINTER_SOLSTICE: 'next_winter_solstice'>: HAFakeDatetime(2025, 12, 21, 16, 2, 51, 231130, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.PHASE: 'phase'>: 100.0,
+      <PlanetStateKey.PHASE: 'phase'>: 'morning_twilight',
       <PlanetStateKey.PLANET_NAME: 'planet_name'>: 'sun',
       <PlanetStateKey.PREVIOUS_RISING: 'previous_rising'>: HAFakeDatetime(2025, 12, 20, 8, 11, 25, 140770, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
       <PlanetStateKey.PREVIOUS_SETTING: 'previous_setting'>: HAFakeDatetime(2025, 12, 20, 16, 28, 33, 622511, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),
-      <PlanetStateKey.SUN_PHASE: 'sun_phase'>: 'morning_twilight',
       'timezone': 'Europe/Berlin',
       <PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: 'today_above_horizon_time'>: '8:17:04',
       <PlanetStateKey.TODAY_RISING: 'today_rising'>: HAFakeDatetime(2025, 12, 21, 8, 11, 57, 351470, tzinfo=zoneinfo.ZoneInfo(key='Europe/Berlin')),

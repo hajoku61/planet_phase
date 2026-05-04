@@ -110,7 +110,7 @@
     },
     "entity": {
         "sensor": {
-            "sun_sun_phase": {
+            "sun_phase": {
                 "name": "Sun Phase",
                 "state": {
                     "day": "day",
@@ -203,7 +203,7 @@
             "moon_next_full_moon": {
                 "name": "Next Fullmoon"
             },
-            "moon_moon_phase": {
+            "moon_phase": {
                 "name": "Moon Phase",
                 "state": {
                     "new_moon": "Newmoon",

@@ -78,39 +78,39 @@
             "name": "Planet Phase"
         },
         "planet_phase_sun": {
-            "name": "Planet Phase Sonne"
+            "name": "Sonne"
         },
         "planet_phase_moon": {
-            "name": "Planet Phase Mond"
+            "name": "Mond"
         },
         "planet_phase_mars": {
-            "name": "Planet Phase Mars"
+            "name": "Mars"
         },
         "planet_phase_venus": {
-            "name": "Planet Phase Venus"
+            "name": "Venus"
         },
         "planet_phase_jupiter": {
-            "name": "Planet Phase Jupiter"
+            "name": "Jupiter"
         },
         "planet_phase_saturn": {
-            "name": "Planet Phase Saturn"
+            "name": "Saturn"
         },
         "planet_phase_uranus": {
-            "name": "Planet Phase Uranus"
+            "name": "Uranus"
         },
         "planet_phase_mercury": {
-            "name": "Planet Phase Merkur"
+            "name": "Merkur"
         },
         "planet_phase_neptune": {
-            "name": "Planet Phase Neptun"
+            "name": "Neptun"
         },
         "planet_phase_pluto": {
-            "name": "Planet Phase Pluto"
+            "name": "Pluto"
         }
     },
     "entity": {
         "sensor": {
-            "sun_sun_phase": {
+            "sun_phase": {
                 "name": "Sonnen Phase",
                 "state": {
                     "day": "Tag",
@@ -203,7 +203,7 @@
             "moon_next_full_moon": {
                 "name": "Nächster Vollmond"
             },
-            "moon_moon_phase": {
+            "moon_phase": {
                 "name": "Mond Phase",
                 "state": {
                     "new_moon": "Neumond",

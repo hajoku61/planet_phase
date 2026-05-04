@@ -137,7 +137,7 @@ ICON_THEMES = {
         PlanetStateKey.TODAY_ABOVE_HORIZON_TIME: "mdi:timer-sand",  # Mond über dem Horizont
         PlanetStateKey.MOON_NEXT_NEWMOON: "mdi:moon-new",  # Neumond
         PlanetStateKey.MOON_NEXT_FULLMOON: "mdi:moon-full",  # Vollmond
-        PlanetStateKey.MOON_STATE: "mdi:information-outline",
+        PlanetStateKey.STATE: "mdi:information-outline",
         PlanetStateKey.DISTANCE: "mdi:map-marker-distance",
         PlanetStateKey.NEXT_ANTITRANSIT: "mdi:minus-circle-outline",
         PlanetStateKey.MEASUREMENT_LOCAL_TIME: "mdi:clock-outline",
@@ -539,8 +539,8 @@ class PlanetPhaseApiClient:
         self._update_planetdata(PlanetStateKey.DISTANCE, myplanet.earth_distance * ephem.meters_per_au)
         # Calculate Planet Hour Angle
         self._update_planetdata(PlanetStateKey.HOUR_ANGLE, (myplanet.ha / ephem.degree))
-        # Calculate Planet Phase
-        self._update_planetdata(PlanetStateKey.PHASE, myplanet.phase)
+        # Calculate Planet Iillumination
+        self._update_planetdata(PlanetStateKey.Iillumination, myplanet.phase)
 
     def _update_event_times_ephem(self, myplanet: Any) -> None:
         """Berechnet Auf-/Untergangszeiten mit Fehlerbehandlung (Polartage)."""
@@ -606,8 +606,8 @@ class PlanetPhaseApiClient:
 
         if isinstance(myplanet, ephem.Sun):
             current_phase = self._get_current_sun_phase(altitude_deg, ascending)
-            self._update_planetdata(PlanetStateKey.SUN_PHASE, current_phase)
-            self._update_planetdata_icon(PlanetStateKey.SUN_PHASE, self._get_icon_for_any_key(self.planet_name, iconkey))
+            self._update_planetdata(PlanetStateKey.PHASE, current_phase)
+            self._update_planetdata_icon(PlanetStateKey.PHASE, self._get_icon_for_any_key(self.planet_name, iconkey))
 
     def _calc_daily_stats_ephem(self, myplanet: Any) -> None:
         """Berechnet Auf-/Untergang und Tageslänge für den heutigen Tag."""
@@ -703,10 +703,10 @@ class PlanetPhaseApiClient:
         else:
             key = "MOON_WANING_GIBBOUS" if p > HALF_MARK else "MOON_WANING_CRESCENT"
 
-        self._update_planetdata(PlanetStateKey.MOON_PHASE, moon_phases[key]["name"])
+        self._update_planetdata(PlanetStateKey.PHASE, moon_phases[key]["name"])
         ###self._update_planetdata(PlanetStateKey.MOON_ICON, moon_phases[key]["icon"])
-        self._update_planetdata_icon(PlanetStateKey.MOON_PHASE, moon_phases[key]["icon"])
-        self._update_planetdata(PlanetStateKey.MOON_STATE, mstate)
+        self._update_planetdata_icon(PlanetStateKey.PHASE, moon_phases[key]["icon"])
+        self._update_planetdata(PlanetStateKey.STATE, mstate)
         self._update_planetdata(PlanetStateKey.MOON_NEXT_FULLMOON, self._get_localtime_ephem(next_full))
         self._update_icon_field(PlanetStateKey.MOON_NEXT_FULLMOON, self.planet_name)
         self._update_planetdata(PlanetStateKey.MOON_NEXT_NEWMOON, self._get_localtime_ephem(next_new))

@@ -77,7 +77,7 @@ async def _get_test_states(hass: HomeAssistant, snapshot: SnapshotAssertion, exp
         # Snapshot-Vergleich
         assert state == snapshot(name=f"{planet}_{PlanetStateKey.MAIN_STATE}")
 
-        entity_id = f"sensor.{DOMAIN}_{planet}_{PlanetStateKey.SUN_PHASE}"
+        entity_id = f"sensor.{DOMAIN}_{planet}_{PlanetStateKey.PHASE}"
         state = hass.states.get(entity_id)
         assert state == snapshot(name=entity_id)
 

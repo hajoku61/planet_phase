@@ -81,14 +81,14 @@ async def _get_test_states(hass: HomeAssistant, snapshot: SnapshotAssertion) -> 
 
     special_state_keys = {
         "sun": [
-            PlanetStateKey.SUN_PHASE,
+            PlanetStateKey.PHASE,
             PlanetStateKey.NEXT_VERNAL_EQUINOX,
             PlanetStateKey.NEXT_SUMMER_SOLSTICE,
             PlanetStateKey.NEXT_AUTUMNAL_EQUINOX,
             PlanetStateKey.NEXT_WINTER_SOLSTICE,
         ],
         "moon": [
-            PlanetStateKey.MOON_PHASE,
+            PlanetStateKey.PHASE,
             PlanetStateKey.MOON_NEXT_NEWMOON,
             PlanetStateKey.MOON_NEXT_FULLMOON,
         ],

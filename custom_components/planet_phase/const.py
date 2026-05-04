@@ -45,7 +45,7 @@ class PlanetStateKey(StrEnum):
     AZIMUTH = "azimuth"
     HOUR_ANGLE = "hour_angle"
     DISTANCE = "distance"
-    PHASE = "phase"
+    Iillumination = "illumination"
 
     # Sun Seasons
     NEXT_VERNAL_EQUINOX = "next_vernal_equinox"
@@ -53,13 +53,11 @@ class PlanetStateKey(StrEnum):
     NEXT_AUTUMNAL_EQUINOX = "next_autumnal_equinox"
     NEXT_WINTER_SOLSTICE = "next_winter_solstice"
 
-    # Sun Specific
-    SUN_STATE = "sun_state"
-    SUN_PHASE = "sun_phase"
+    # Sun / Moon Specific
+    STATE = "state"
+    PHASE = "phase"
 
     # Moon Specific
-    MOON_STATE = "moon_state"
-    MOON_PHASE = "moon_phase"
     MOON_NEXT_NEWMOON = "next_new_moon"
     MOON_NEXT_FULLMOON = "next_full_moon"
 

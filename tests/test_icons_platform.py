@@ -10,7 +10,7 @@ from custom_components.planet_phase.const import PlanetStateKey
 def get_icon(planet: str, key: str, state_value: str | None = None) -> str:
     """Repliziert die Logik der Icon-Zuweisung für Tests."""
     # 1. Mondphasen-Speziallogik
-    if key == PlanetStateKey.MOON_PHASE and state_value in moon_phases:
+    if key == PlanetStateKey.PHASE and state_value in moon_phases:
         return moon_phases[state_value]["icon"]
     # 2. Theme-Logik
     theme = ICON_THEMES.get(planet.lower(), ICON_THEMES["default"])
@@ -26,7 +26,7 @@ def get_icon(planet: str, key: str, state_value: str | None = None) -> str:
     [
         ("sun", PlanetStateKey.TODAY_RISING, None, "mdi:weather-sunset-up"),  # Korrektes Mapping
         ("sun", PlanetStateKey.UNKNOWN, None, "mdi:weather-sunny"),  # Sun Fallback
-        ("moon", PlanetStateKey.MOON_PHASE, "MOON_NEW_MOON", "mdi:moon-new"),  # Mondphase Dynamisch
+        ("moon", PlanetStateKey.PHASE, "MOON_NEW_MOON", "mdi:moon-new"),  # Mondphase Dynamisch
         ("moon", PlanetStateKey.ALTITUDE, None, "mdi:angle-acute"),  # Moon Fallback
         ("mars", PlanetStateKey.TODAY_RISING, None, "mdi:star-check-outline"),  # Globaler Fallback
     ],
@@ -121,7 +121,7 @@ def test_static_icon_mapping(planet: str, key: str, expected: str) -> None:
 @pytest.mark.parametrize(("phase_key", "expected_icon"), [(k, v["icon"]) for k, v in moon_phases.items()])
 def test_dynamic_moon_phases(phase_key: str, expected_icon: str) -> None:
     """Prüft alle 8 dynamischen Mondphasen-Icons."""
-    assert get_icon("moon", PlanetStateKey.MOON_PHASE, phase_key) == expected_icon
+    assert get_icon("moon", PlanetStateKey.PHASE, phase_key) == expected_icon
 
 
 @pytest.mark.parametrize(
