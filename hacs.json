@@ -1,5 +1,8 @@
 {
-    "name": "planet phase",
+    "name": "Planet Phase",
+    "description": "A custom integration to display the current planetary phase (preferably Sun/Moon).",
+    "domains": ["sensor"],
+    "render_readme": true,
     "homeassistant": "2026.4.4",
     "hacs": "2.0.5"
 }
