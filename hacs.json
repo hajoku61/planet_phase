@@ -1,6 +1,5 @@
 {
     "name": "Planet Phase",
-    "domains": ["sensor"],
     "render_readme": true,
     "homeassistant": "2026.4.4",
     "hacs": "2.0.5"
