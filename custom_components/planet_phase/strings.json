@@ -111,7 +111,7 @@
     "entity": {
         "sensor": {
             "sun_phase": {
-                "name": "Sun Phase",
+                "name": "Phase",
                 "state": {
                     "day": "day",
                     "night": "night",
@@ -204,7 +204,7 @@
                 "name": "Next Fullmoon"
             },
             "moon_phase": {
-                "name": "Moon Phase",
+                "name": "Phase",
                 "state": {
                     "new_moon": "Newmoon",
                     "waxing_crescent": "waxing crescent",

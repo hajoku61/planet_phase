@@ -111,7 +111,7 @@
     "entity": {
         "sensor": {
             "sun_phase": {
-                "name": "Sonnen Phase",
+                "name": "Phase",
                 "state": {
                     "day": "Tag",
                     "night": "Nacht",
@@ -204,7 +204,7 @@
                 "name": "Nächster Vollmond"
             },
             "moon_phase": {
-                "name": "Mond Phase",
+                "name": "Phase",
                 "state": {
                     "new_moon": "Neumond",
                     "waxing_crescent": "Zunehmender Sichelmond",
